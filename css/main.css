@@ -1,11 +1,39 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --text-color: #fff;
+    --body-bg-color: #111;
+    --font-family: "Inter", "Arial", sans-serif;
 }
 
 /* FONTS */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+         url("../fonts/inter-v11-latin-regular.woff2") format("woff2"), 
+         url("../fonts/inter-v11-latin-regular.woff") format("woff");
+    font-display: swap; 
+}
 
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+         url("../fonts/inter-v11-latin-500.woff2") format("woff2"), 
+         url("../fonts/inter-v11-latin-500.woff") format("woff");
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+         url("../fonts/inter-v11-latin-700.woff2") format("woff2"), 
+         url("../fonts/inter-v11-latin-700.woff") format("woff");
+    font-display: swap; 
+  }
 
 html {
     height: 100%;
@@ -32,8 +60,8 @@ body {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 26px;
     color: var(--text-color);
 }
 
@@ -49,7 +77,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
