@@ -5,43 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
+    
     <!-- STYLES -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+    
     <!-- Header -->
     <header class="site-header header">
         <div class="header__container container">
             <a class="header__logo-link" href="index.html">Andarov.</a>
-            <nav class="header__sitenav sitenav">
-                <ul class="sitenav__items">
-                    <li class="sitenav__item"><a class="sitenav__link" href="#">About me</a></li>
-                    <li class="sitenav__item"><a class="sitenav__link" href="#">Projects</a></li>
-                    <li class="sitenav__item"><a class="sitenav__link" href="#">Technologies</a></li>
-                    <li class="sitenav__item"><a class="sitenav__link" href="#">Contacts</a></li>
-                </ul>
-            </nav>
+            
             <div class="header__contact-wrapper contact">
                 <ul class="contact__list">
                     <li class="contact__item">
-                        <a class="contact__link" href="https://github.com/Andarov">
-                            <svg class="contact__icon" width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 1C7.52829 1 0.666626 7.86167 0.666626 16.3333C0.666626 23.1183 5.05579 28.8492 11.1508 30.8808C11.9175 31.015 12.205 30.555 12.205 30.1525C12.205 29.7883 12.1858 28.5808 12.1858 27.2967C8.33329 28.0058 7.33663 26.3575 7.02996 25.495C6.85746 25.0542 6.10996 23.6933 5.45829 23.3292C4.92163 23.0417 4.15496 22.3325 5.43913 22.3133C6.64663 22.2942 7.50913 23.425 7.79663 23.885C9.17663 26.2042 11.3808 25.5525 12.2625 25.15C12.3966 24.1533 12.7991 23.4825 13.24 23.0992C9.82829 22.7158 6.26329 21.3933 6.26329 15.5283C6.26329 13.8608 6.85746 12.4808 7.83496 11.4075C7.68163 11.0242 7.14496 9.4525 7.98829 7.34417C7.98829 7.34417 9.27246 6.94167 12.205 8.91583C13.4316 8.57083 14.735 8.39833 16.0383 8.39833C17.3416 8.39833 18.645 8.57083 19.8716 8.91583C22.8041 6.9225 24.0883 7.34417 24.0883 7.34417C24.9316 9.4525 24.395 11.0242 24.2416 11.4075C25.2191 12.4808 25.8133 13.8417 25.8133 15.5283C25.8133 21.4125 22.2291 22.7158 18.8175 23.0992C19.3733 23.5783 19.8525 24.4983 19.8525 25.9358C19.8525 27.9867 19.8333 29.635 19.8333 30.1525C19.8333 30.555 20.1208 31.0342 20.8875 30.8808C26.9441 28.8492 31.3333 23.0992 31.3333 16.3333C31.3333 7.86167 24.4716 1 16 1V1Z" fill="currentColor"/>
-                                </svg>
+                        <a class="contact__link" href="https://github.com/Andarov" target="_blank">
+                            <img class="contact__icon" src="img/github.svg" alt="Github icon" width="32" height="32">
+                            <span>Github</span>
                         </a>
                     </li>
                     <li class="contact__item">
-                        <a class="contact__link" href="https://t.me/Andarov_077">
-                            <svg class="contact__icon" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="currentColor"/></svg>
+                        <a class="contact__link" href="https://app.netlify.com/teams/andarov/overview?_ga=2.208285074.1867883697.1655096490-357238872.1652179995" target="_blank">
+                            <img class="contact__icon" src="img/netlify.svg" alt="Netlify icon" width="32" height="32">
+                            <span>Netlify</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
+    
+    <!-- Profile -->
+    <section class="profile">
+        <div class="profile__container container">
+            <img class="profile__img" src="img/profile.jpg" alt="Profile picture" width="" height="">
+            <h1 class="profile__heading">Bektur Andarov</h1>
+            <span class="profile__prof">Frontend dasturchi</span>
+        </div>
+    </section>
 
+
+    
 </body>
 </html>
