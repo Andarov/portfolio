@@ -1,6 +1,7 @@
 :root {
     --text-color: #fff;
     --goldenrod: rgb(245, 204, 101);
+    --green: rgb(36, 105, 36);
     --body-bg-color: #333;
     --font-family: "Inter", "Arial", sans-serif;
 }
@@ -60,7 +61,7 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--font-family);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: var(--text-color);
@@ -107,6 +108,7 @@ a {
     flex-shrink: 0;
     margin-right: 200px;
     font-size: 32px;
+    font-weight: 700;
     color: var(--goldenrod);
 }
 
@@ -137,6 +139,7 @@ a {
     align-items: center;
     color: var(--goldenrod);
     padding: 5px 15px;
+    font-weight: 500;
     border: 3px solid var(--goldenrod);
     border-radius: 8px;
     transition: color 0.4s ease,
@@ -164,6 +167,7 @@ a {
 .profile {
     padding-top: 50px;
     padding-bottom: 50px;
+    box-shadow: 0 0 8px var(--green);
 }
 
 .profile__container {
@@ -181,6 +185,7 @@ a {
 }
 
 .profile__heading {
+    font-weight: 700;
     margin: 0;
     margin-bottom: 10px;
     font-size: 32px;
@@ -190,4 +195,169 @@ a {
     font-size: 18px;
     color: var(--goldenrod);
     margin: 0;
+}
+
+/* Projects */
+.projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.projects__heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--goldenrod);
+}
+
+/* Projects__list */
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.project__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    padding: 30px;
+    border: 2px solid var(--green);
+    box-shadow: 0 0 5px var(--green);
+    background-color: rgb(35, 64, 67);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.project__icon {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.icon-wrapper {
+    display: flex;
+}
+
+.icon-name {
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ecommerce-icon {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.skilled-icon {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.project__name {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.project__heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--goldenrod);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.project__about {
+    flex-grow: 1;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.contact__list--project {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.project__link {
+    background-color: var(--green);
+    padding: 5px 20px;
+    color: var(--goldenrod);
+    border-radius: 8px;
+    border: 3px solid var(--text-color);
+    transition: color 0.4s ease,
+    border 0.4s ease;
+}
+
+.project__link:hover {
+    border: 3px solid var(--goldenrod);
+    color: var(--text-color);
+}
+
+/* Footer */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(17, 17, 17, 0.3);
+    border-top: 2px solid var(--green);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo-link {
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 200px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--goldenrod);
+}
+
+.footer__logo-link:hover {
+    opacity: 0.6;
+}
+
+.footer__logo {
+    width: 139px;
+    height: 20px;
+    transition: 0.4s ease opacity;
+}
+
+.contact__item--footer:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contact__telegram-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    padding: 5px 15px;
+    font-weight: 500;
+    border: 3px solid var(--text-color);
+    border-radius: 8px;
+    transition: color 0.4s ease,
+    border 0.4s ease;
+}
+
+.contact__telegram-link:hover {
+    border: 3px solid var(--goldenrod);
+    color: var(--goldenrod);
+}
+
+.telegram-name {
+    margin-left: 10px;
 }
