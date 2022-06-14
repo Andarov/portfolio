@@ -361,3 +361,62 @@ a {
 .telegram-name {
     margin-left: 10px;
 }
+
+/* Content */
+.content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 5px 20px;
+    align-items: center;
+    background-color: rgb(53, 57, 57);
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 5px var(--text-color);
+    margin-bottom: 30px;
+}
+
+.back-btn-icon {
+    color: var(--text-color);
+    margin-right: 10px;
+}
+
+.back-btn-text {
+    color: var(--text-color);
+}
+
+.content__heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+    color: var(--goldenrod);
+}
+
+.content__about {
+    display: flex;
+}
+
+.content__list {
+    width: 400px;
+    padding-top: 60px;
+    margin: 0;
+    margin-right: 50px;
+}
+
+.content__item-title {
+    font-size: 20px;
+    color: var(--goldenrod);
+    margin-right: 10px;
+}
+
+.content__item-heading {
+    color: var(--goldenrod);
+    margin-right: 10px;
+}
+
+.content__img {
+    width: 660px;
+}
+
