@@ -3,6 +3,7 @@
     --goldenrod: rgb(36, 105, 36);
     --green: rgb(245, 204, 101);
     --project-item: rgb(200, 200, 200);
+    --controller: rgb(155, 149, 149);
     --body-bg-color: #f9f9f9;
     --header-footer: #dedddd;
     --font-family: "Inter", "Arial", sans-serif;
@@ -13,6 +14,7 @@
     --goldenrod: rgb(245, 204, 101);
     --green: rgb(36, 105, 36);
     --project-item: rgb(29, 60, 64);
+    --controller: #fff;
     --body-bg-color: #222;
     --header-footer: #000;
     --font-family: "Inter", "Arial", sans-serif;
@@ -208,7 +210,6 @@ a {
     border-radius: 12px;
     display: flex;
     align-items: center;
-    /* padding: 5px; */
     margin-right: 16px;
     margin-left: 16px;
 }
@@ -217,13 +218,9 @@ a {
     margin-left: 23px;
     width: 24px;
     height: 24px;
-    background-color: rgb(155, 149, 149);
+    background-color: var(--controller);
     border-radius: 50%;
     transition: transform 0.4s ease;
-}
-
-.controller:hover {
-    background-color: #939BF4;
 }
 
 .control-day,
