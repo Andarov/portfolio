@@ -1,8 +1,20 @@
 :root {
+    --text-color: #000;
+    --goldenrod: rgb(36, 105, 36);
+    --green: rgb(245, 204, 101);
+    --project-item: rgb(200, 200, 200);
+    --body-bg-color: #f9f9f9;
+    --header-footer: #dedddd;
+    --font-family: "Inter", "Arial", sans-serif;
+}
+
+.dark-mode {
     --text-color: #fff;
     --goldenrod: rgb(245, 204, 101);
     --green: rgb(36, 105, 36);
+    --project-item: rgb(29, 60, 64);
     --body-bg-color: #222;
+    --header-footer: #000;
     --font-family: "Inter", "Arial", sans-serif;
 }
 
@@ -67,6 +79,19 @@ body {
     color: var(--text-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -94,7 +119,7 @@ a {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #000;
+    background-color: var(--header-footer);
 }
 
 .header__container {
@@ -168,6 +193,71 @@ a {
     opacity: 0.6;
 }
 
+/* FORM */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controll {
+    position: relative;
+    width: 48px;
+    height: 24px;
+    background-color: var(--body-bg-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    /* padding: 5px; */
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.controller {
+    margin-left: 23px;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(155, 149, 149);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.controller:hover {
+    background-color: #939BF4;
+}
+
+.control-day,
+.control-night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.input-day:checked ~ .controll .control-night,
+.input-night:checked ~ .controll .control-day {
+    z-index: 5;
+}
+
+
+.input-day:checked ~ .controll .controller {
+    transform: translateX(-100%);
+}
+
+.control-day:checked .controller {
+    transform: translateX(-100%);
+}
+
+.label {
+    display: flex;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+
 /* Projects */
 .projects {
     padding-top: 50px;
@@ -178,7 +268,7 @@ a {
     text-align: center;
     margin-top: 0;
     margin-bottom: 80px;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--goldenrod);
 }
@@ -200,11 +290,10 @@ a {
     align-items: flex-start;
     width: 350px;
     padding: 30px;
-    background-color: rgb(35, 64, 67);
+    background-color: var(--project-item);
     border-radius: 10px;
     margin-left: 30px;
     margin-bottom: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .project__img {
@@ -252,7 +341,7 @@ a {
 .footer {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #000;
+    background-color: var(--header-footer);
 }
 
 .footer__container {
@@ -376,6 +465,5 @@ dd {
 
 .content__img {
     width: 660px;
-    /* height: 450px; */
 }
 
