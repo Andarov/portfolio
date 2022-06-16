@@ -2,9 +2,9 @@
     --text-color: #000;
     --goldenrod: rgb(36, 105, 36);
     --green: rgb(245, 204, 101);
-    --project-item: rgb(200, 200, 200);
+    --project-item: #dedddd;
     --controller: rgb(155, 149, 149);
-    --body-bg-color: #f9f9f9;
+    --body-bg-color: #fff;
     --header-footer: #dedddd;
     --font-family: "Inter", "Arial", sans-serif;
 }
@@ -171,16 +171,13 @@ a {
     display: flex;
     align-items: center;
     color: var(--text-color);
+    background-color: transparent;
     padding: 5px 15px;
     font-weight: 500;
     border: 3px solid var(--goldenrod);
     border-radius: 8px;
     transition: color 0.4s ease,
     border 0.4s ease;
-}
-
-.contact__link:hover {
-    border: 3px solid var(--text-color);
 }
 
 .contact__icon {
@@ -197,7 +194,7 @@ a {
 
 /* FORM */
 .form {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -401,9 +398,8 @@ a {
     display: inline-flex;
     padding: 5px 20px;
     align-items: center;
-    background-color: rgb(53, 57, 57);
+    background-color: var(--project-item);
     border: 1px solid var(--text-color);
-    margin-bottom: 30px;
 }
 
 .back-btn-icon {
@@ -462,5 +458,6 @@ dd {
 
 .content__img {
     width: 660px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
