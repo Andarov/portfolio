@@ -11,17 +11,39 @@
     
 </head>
 <body>
-    
-    <main class="main-content">
-        <div class="content container">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container container">
             <a class="back-btn" href="index.html">
                 <svg class="back-btn-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m6.464 4.107 1.179 1.179-3.89 3.889h14.85v1.65H3.753l3.89 3.889-1.179 1.179L.572 10l5.892-5.893Z" fill="currentColor"/></svg>
                 <span class="back-btn-text">Bosh sahifaga o'tish</span>
             </a>
+            <!-- FORM -->
+            <form class="form">
+                <input class="input-day visually-hidden" type="radio" id="day" name="pricing" value="day" checked>
+                <input class="input-night visually-hidden" type="radio" id="night" name="pricing" value="night">
+                <label class="label label-day" for="day">
+                    <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 3.365c-.33 0-.612-.295-.612-.639V.836c0-.343.282-.638.612-.638s.612.295.612.638v1.89c0 .344-.282.639-.612.639ZM6.402 5.952A5.314 5.314 0 0 1 10 4.552c1.396 0 2.685.525 3.598 1.4.913.85 1.504 2.05 1.504 3.35 0 1.3-.59 2.5-1.504 3.35a5.314 5.314 0 0 1-3.598 1.4c-1.396 0-2.685-.525-3.598-1.4-.913-.85-1.504-2.05-1.504-3.35 0-1.3.564-2.5 1.504-3.35ZM3.059 3.71l1.483 1.438c.296.261.728.261.97 0a.649.649 0 0 0 0-.941L4.03 2.769a.698.698 0 0 0-.97 0 .649.649 0 0 0 0 .941ZM.66 8.906h1.948c.355 0 .658.274.658.594 0 .32-.303.594-.658.594H.658C.304 10.094 0 9.82 0 9.5c0-.32.304-.594.658-.594Zm4.853 4.946a.698.698 0 0 0-.97 0L3.059 15.29a.649.649 0 0 0 0 .941c.27.261.701.261.97 0l1.483-1.438a.649.649 0 0 0 0-.94ZM10 15.635c.33 0 .612.295.612.639v1.89c0 .343-.282.638-.612.638s-.612-.294-.612-.638v-1.89c0-.344.282-.639.612-.639Zm6.94-.345-1.482-1.438c-.296-.261-.728-.261-.97 0a.649.649 0 0 0 0 .941l1.482 1.438c.27.261.701.261.97 0a.649.649 0 0 0 0-.941Zm-.205-5.79c0-.32.303-.594.658-.594h1.949c.354 0 .658.274.658.594 0 .32-.304.594-.658.594h-1.95c-.354 0-.657-.274-.657-.594Zm-2.247-4.352c.27.261.7.261.97 0l1.483-1.438a.649.649 0 0 0 0-.941.698.698 0 0 0-.97 0l-1.483 1.438a.649.649 0 0 0 0 .94Z" fill="currentColor"/></svg>
+                </label>
+                <!-- CONTROLLER -->
+                <div class="controll">
+                    <div class="controller"></div>
+                    <label class="control-day" for="day"></label>
+                    <label class="control-night" for="night"></label>
+                </div>
+                <label class="label label-night" for="night">
+                    <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 0a6.02 6.02 0 0 0-4.232 1.768A5.89 5.89 0 0 0 0 6a6.02 6.02 0 0 0 1.768 4.232A5.89 5.89 0 0 0 6 12a6.02 6.02 0 0 0 4.232-1.768A6.02 6.02 0 0 0 12 6c0-.185-.009-.369-.026-.55A4.034 4.034 0 0 1 8 9a3.927 3.927 0 0 1-2.821-1.179A4.013 4.013 0 0 1 4 5c0-1.095.442-2.105 1.179-2.821A4.013 4.013 0 0 1 8 1c.716 0 1.397.19 1.982.527A5.903 5.903 0 0 0 6 0Z" fill="currentColor"/></svg>
+                </label>
+            </form>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="content container">
             <h1 class="content__heading">Pricing component</h1>
             <!-- Content-wrapper -->
             <div class="content__wrapper">
-                <div class="content__about">
+                <div class="content__about contact">
                     <ul class="contact__list contact__list--project">
                         <li class="contact__item">
                             <a class="contact__link" href="https://github.com/Andarov/pricing" target="_blank">
@@ -44,7 +66,7 @@
                         <dt class="content__item-title">Texnologiyalar:</dt>
                         <dd>HTML, CSS, JS</dd>
                     </dl>
-        
+                    
                     <p class="content__item-list-heading">Ketkazilgan vaqt:</p>
                     <ul class="content__item-list">
                         <li class="content__item"><span class="content__item-heading">Global stillar:</span>
@@ -61,33 +83,34 @@
             </ul>
         </div>
         <img class="content__img" src="img/pricing.jpg" alt="Pricing component maketi">
-        </div>
-        </div>
-    </main>
+    </div>
+</div>
+</main>
 
-    <!-- Footer -->
-    <footer class="site-footer footer">
-        <div class="footer__container container">
-            <a class="footer__logo-link" href="index.html">Andarov.</a>
-            
-            <div class="footer__contact-wrapper contact">
-                <ul class="contact__list">
-                    <li class="contact__item contact__item--footer">
-                        <span class="contact__tel">Telefon: <br> (94) 568-69-97</span>
-                    </li>
-                    <li class="contact__item contact__item--footer">
-                        <span class="contact__email">Email: <br> bekturnandarov678@gmail.com</span>
-                    </li>
-                    <li class="contact__item contact__item--footer">
-                        <a class="contact__telegram-link" href="https://t.me/Andarov_077" target="_blank">
-                            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="currentColor"/></svg>
-                            <span class="telegram-name">Telegram</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!-- Footer -->
+<footer class="site-footer footer">
+    <div class="footer__container container">
+        <a class="footer__logo-link" href="index.html">Andarov.</a>
+        
+        <div class="footer__contact-wrapper contact">
+            <ul class="contact__list">
+                <li class="contact__item contact__item--footer">
+                    <span class="contact__tel">Telefon: <br> (94) 568-69-97</span>
+                </li>
+                <li class="contact__item contact__item--footer">
+                    <span class="contact__email">Email: <br> bekturnandarov678@gmail.com</span>
+                </li>
+                <li class="contact__item contact__item--footer">
+                    <a class="contact__telegram-link" href="https://t.me/Andarov_077" target="_blank">
+                        <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0Zm5.568 8.16c-.18 1.896-.96 6.504-1.356 8.628-.168.9-.504 1.2-.816 1.236-.696.06-1.224-.456-1.896-.9-1.056-.696-1.656-1.128-2.676-1.8-1.188-.78-.42-1.212.264-1.908.18-.18 3.252-2.976 3.312-3.228a.24.24 0 0 0-.06-.216c-.072-.06-.168-.036-.252-.024-.108.024-1.788 1.14-5.064 3.348-.48.324-.912.492-1.296.48-.432-.012-1.248-.24-1.86-.444-.756-.24-1.344-.372-1.296-.792.024-.216.324-.432.888-.66 3.504-1.524 5.832-2.532 6.996-3.012 3.336-1.392 4.02-1.632 4.476-1.632.096 0 .324.024.468.144.12.096.156.228.168.324-.012.072.012.288 0 .456Z" fill="currentColor"/></svg>
+                        <span class="telegram-name">Telegram</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</footer>
 
+<script src="main.js"></script>
 </body>
 </html>

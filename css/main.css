@@ -430,9 +430,10 @@ a {
 
 .content__item-title {
     float: left;
+    font-weight: 700;
     margin-right: 4px;
     padding: 4px 0;;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--goldenrod);
 }
 
@@ -441,7 +442,8 @@ dd {
 }
 
 .content__item-list-heading {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 700;
     color: var(--goldenrod);
     margin-top: 0;
     margin-bottom: 10px;
@@ -452,6 +454,8 @@ dd {
 }
 
 .content__item-heading {
+    font-weight: 500;
+    font-size: 18px;
     color: var(--goldenrod);
     margin-right: 10px;
 }
