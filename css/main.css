@@ -294,7 +294,7 @@ a {
 }
 
 .project__img {
-    width: 290px;
+    width: 100%;
     height: 200px;
     margin-bottom: 25px;
     object-fit: cover;
@@ -466,5 +466,109 @@ dd {
 .content__img {
     width: 660px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .projects__list {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contact__link-icon {
+        display: none;
+    }
+
+    .contact__telegram-link-icon {
+        display: none;
+    }
+
+    .telegram-name {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .profile__img {
+        display: none;
+    }
+
+    .profile__prof {
+        display: none;
+    }
+
+    .profile__heading {
+        margin-bottom: 0;
+    }
+
+    .contact__item-email {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact__profile {
+        padding: 0;
+        border: none;
+    }
+
+    .contact__telegram-link {
+        padding: 0;
+        border: none;
+    }
+
+    .telegram-name {
+        display: none;
+    }
+    
+    .contact__link-icon {
+        display: block;
+    }
+
+    .contact__telegram-link-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    *:focus {
+        outline: none;
+    }
+
+    .profile__name {
+        display: none;
+    }
+
+    .projects__heading {
+        margin-bottom: 50px;
+    }
+
+    .project__item {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .header__contact-list {
+        display: none;
+    }
+
+    .contact__item-tel {
+        display: none;
+    }
+
+    .project__about {
+        margin-bottom: 16px;
+    }
+
+    .contact__list--project {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .contact__icon {
+        display: none;
+    }
 }
 
