@@ -315,6 +315,12 @@ a {
     margin-bottom: 35px;
 }
 
+.project__about-link {
+    color: rgb(88, 88, 236);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .contact__list--project {
     display: flex;
     flex-wrap: wrap;
