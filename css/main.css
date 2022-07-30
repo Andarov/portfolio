@@ -301,6 +301,10 @@ a {
     object-position: center top;
 }
 
+.project__img--color {
+    object-fit: unset;
+}
+
 .project__heading {
     font-size: 28px;
     font-weight: 700;
